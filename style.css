@@ -113,6 +113,8 @@ figcaption {
 section img {
   z-index: 100;
   width: 55rem;
+  border: solid #ffffff 2px ;
+  box-shadow: 1px 1px 2px rgb(190, 189, 189), 0 0 25px rgb(190, 189, 189), 0 0 5px rgb(190, 189, 189);
 }
 
 
