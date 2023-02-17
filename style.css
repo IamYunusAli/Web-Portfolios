@@ -57,7 +57,7 @@ header {
   left: 0;
   width: 100%;
   height: 100vh;
-
+  z-index: 1;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -87,10 +87,12 @@ header span {
 }
 
 section {
+  position: relative;
   padding: 70px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  z-index: 12;
 }
 
 section p {
@@ -115,6 +117,10 @@ section img {
   width: 55rem;
   border: solid #ffffff 2px ;
   box-shadow: 1px 1px 2px rgb(190, 189, 189), 0 0 25px rgb(190, 189, 189), 0 0 5px rgb(190, 189, 189);
+}
+
+section img:hover {
+  cursor: pointer;
 }
 
 
@@ -144,5 +150,60 @@ img.arrow {
   bottom: 32px;
   left: 50%;
   transform: translate(-50%, 0);
+  filter: invert(100%);
 }
 
+input {
+  width: 55rem;
+  height: 3rem;
+  margin: 1rem 0 1rem 0;
+  background-color: transparent;
+  border: none;
+  border-bottom: solid #ffffff 2px;
+  color: #ffffff;
+}
+
+textarea {
+  width: 55rem;
+  height: 10rem;
+  margin: 1rem 0 1rem 0;
+  background-color: transparent;
+  border: none;
+  border-bottom: solid #ffffff 2px;
+  color: #ffffff;
+}
+
+
+input::placeholder , textarea::placeholder{
+  color: #999595;
+  font-family: Mazius Review;
+  font-size: 18px;
+}
+
+input:hover , textarea:hover{
+  border-top: #ffffff 2px solid;
+}
+
+button {
+  width: 20rem;
+  height: 3rem;
+  margin: 1rem 0 1rem 0;
+  background-color: #000000;
+  border: solid #ffffff 2px;
+  color: #ffffff;
+  font-family: Mazius Review;
+  font-size: 18px;
+}
+
+button:hover {
+  cursor: pointer;
+  background-color: #ffffff;
+  color: #000000;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 9999;
+}
